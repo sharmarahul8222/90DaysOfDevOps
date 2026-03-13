@@ -59,6 +59,7 @@ Task 5: Exclude & Fail-Fast
   <img width="1288" height="702" alt="image" src="https://github.com/user-attachments/assets/0bee1c22-7e27-45ac-be01-0b0a76b2f0e4" />
 
 - Write in your notes: What does fail-fast: true (the default) do vs false?
+  
 fail-fast: It controls what happens to other matrix jobs when one job fails. By default, fail-fast is set to true. This means if one job in the matrix fails, GitHub will cancel all the remaining running or queued jobs in that matrix. And if fail-fast is set to false, GitHub will continue running all jobs even if one job fails.
 
 
