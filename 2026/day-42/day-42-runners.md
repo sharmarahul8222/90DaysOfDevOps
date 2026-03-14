@@ -66,6 +66,17 @@ Labels in a GitHub Actions runner are used to target specific runners for a job 
 Labels become important when a project has multiple self-hosted runners with different capabilities.
 They allow workflows to run on the correct machine based on requirements.
 
+
+Task 6: GitHub-Hosted vs Self-Hosted
+| Feature                 | GitHub-Hosted Runner                                                      | Self-Hosted Runner                                                |
+| ----------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| **Who manages it?**     | Managed completely by **GitHub**                                          | Managed by **you (user / organization)**                          |
+| **Cost**                | Free for public repositories and limited minutes for private repos        | Cost of **your own infrastructure (VM, server, cloud instance)**  |
+| **Pre-installed tools** | Comes with **many tools pre-installed** (Docker, Node, Python, Git, etc.) | You must **install and maintain tools yourself**                  |
+| **Good for**            | Quick setup, CI pipelines, testing across multiple OS environments        | Custom environments, private networks, heavy workloads            |
+| **Security concern**    | Runs on GitHub infrastructure (less control)                              | Runs on your infrastructure (more control but you must secure it) |
+
+
   
 
 
