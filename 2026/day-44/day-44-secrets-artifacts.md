@@ -17,6 +17,7 @@ Task 1: GitHub Secrets
                 run: echo "The secrets value is ${{ secrets.MY_SECRET_MESSAGE }}"
   
 - Try to print ${{ secrets.MY_SECRET_MESSAGE }} directly — what does GitHub show?
+  ![alt text](image.png)
   The secrets value is ***
   
 - Write in your notes: Why should you never print secrets in CI logs?
