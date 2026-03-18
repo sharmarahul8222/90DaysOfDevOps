@@ -3,6 +3,7 @@ Task 1: Prepare
 - Add the Dockerfile to your github-actions-practice repo (or create a minimal one)
 - Make sure DOCKER_USERNAME and DOCKER_TOKEN secrets are set from Day 44
   Added both dockerfile and Dockerized app and also verify secerets are on point.
+  
   <img width="407" height="233" alt="image" src="https://github.com/user-attachments/assets/a607f6ae-f399-44d4-b984-0cadfb4c6cd1" />
 
 Task 2: Build the Docker Image in CI
@@ -43,6 +44,7 @@ Task 5: Add a Status Badge
 - Get the badge URL for your docker-publish workflow from the Actions tab
 - Add it to your README.md
 - Push — the badge should show green
+  
   <img width="321" height="208" alt="image" src="https://github.com/user-attachments/assets/0f316e9d-40d6-41de-8e09-cfe6918dc77d" />
 
 
