@@ -88,16 +88,12 @@ Verify: Does your custom action run and print the greeting?
 <img width="896" height="818" alt="image" src="https://github.com/user-attachments/assets/a2075395-04b9-4ce5-901f-39b952166d26" />
 
 Task 6: Reusable Workflow vs Composite Action
-Fill this in your notes:
-
-Reusable Workflow	Composite Action
-Triggered by	workflow_call	uses: in a step
-Can contain jobs?	?	?
-Can contain multiple steps?	?	?
-Lives where?	?	?
-Can accept secrets directly?	?	?
-Best for	?	?
-
+- Reusable workflows are triggered using workflow_call, while composite actions are used via uses: inside a step.
+- Reusable workflows can contain multiple jobs, whereas composite actions cannot contain jobs.
+- Both can include multiple steps, but reusable workflows operate at a higher (pipeline) level.
+- Reusable workflows must be stored in .github/workflows/, while composite actions live in .github/actions/.
+- Reusable workflows can directly accept secrets, but composite actions require secrets to be passed indirectly via environment variables.
+- Reusable workflows are best for full CI/CD pipelines, while composite actions are ideal for small reusable logic within a job.
 
 
 
