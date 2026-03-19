@@ -87,15 +87,16 @@ Create a custom composite action in your repo at .github/actions/setup-and-greet
 Verify: Does your custom action run and print the greeting?
 <img width="896" height="818" alt="image" src="https://github.com/user-attachments/assets/a2075395-04b9-4ce5-901f-39b952166d26" />
 
-
 Task 6: Reusable Workflow vs Composite Action
-Feature	Reusable Workflow	Composite Action
+Fill this in your notes:
+
+Reusable Workflow	Composite Action
 Triggered by	workflow_call	uses: in a step
-Can contain jobs?	Yes (multiple jobs)	No (only steps)
-Can contain multiple steps?	Yes	Yes
-Lives where?	.github/workflows/	.github/actions/<action-name>/
-Can accept secrets directly?	Yes (via secrets:)	No (must pass via env)
-Best for	Full CI/CD pipelines, multi-job workflows	Small reusable logic, step grouping
+Can contain jobs?	?	?
+Can contain multiple steps?	?	?
+Lives where?	?	?
+Can accept secrets directly?	?	?
+Best for	?	?
 
 
 
