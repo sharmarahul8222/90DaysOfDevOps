@@ -14,6 +14,7 @@ Task 1: Recall the Kubernetes Story
   The name means “helmsman,” symbolizing control over containerized systems.
   
 Task 2: Draw the Kubernetes Architecture
+
 <img width="656" height="371" alt="image" src="https://github.com/user-attachments/assets/cb737c3f-9a3c-45c4-9349-79199d5dcc44" />
 
 
