@@ -24,12 +24,9 @@ Task 2: Create a Custom Pod (BusyBox)
 
 Task 3: Imperative vs Declarative
 
-Feature,Imperative Approach,Declarative Approach
-Concept,Telling the system how to do it.,Telling the system what you want.
-Main Tool,"kubectl CLI (run, create, expose).",YAML manifests + kubectl apply.
-State,Changes are immediate; no history.,"Manifests act as the ""Source of Truth."""
-Best For,"Quick tasks, dev, and debugging.","Production, CI/CD, and scaling."
-Auditability,Low; no record of manual steps.,High; version-controlled in Git.
+- Imperative: The Imperative approach is focused on the "How." You provide the cluster with a series of active commands (e.g., kubectl run or kubectl scale) to change its state. This is highly efficient for one-off tasks, rapid prototyping, or local debugging because it provides immediate feedback without the overhead of writing files. However, it lacks a "paper trail," making it difficult to audit or reproduce exactly what was done if the cluster fails.
+
+- Declarative: The Declarative approach is focused on the "What." Instead of telling Kubernetes what to do, you define the Desired State in a YAML or JSON manifest and use kubectl apply. The system then works automatically to align the current state with your definition. This method is the foundation of modern DevOps and GitOps; because the manifests are stored in version control (like Git), you have a complete history of every change, making it the superior choice for production workloads and CI/CD pipelines.
 
 
 - Create a pod without a YAML file and extract the YAML that Kubernetes generated
