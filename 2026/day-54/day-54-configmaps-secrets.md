@@ -44,6 +44,13 @@ Task 6: Update a ConfigMap and Observe Propagation
   <img width="1542" height="270" alt="image" src="https://github.com/user-attachments/assets/e97c9155-06d3-4a92-8244-8557bbfbfd2d" />
 
 
+Task 7: Clean Up
+- Delete all pods, ConfigMaps, and Secrets you created.
+  <img width="1173" height="397" alt="image" src="https://github.com/user-attachments/assets/f632f99d-4720-470b-9eb3-68025e127d9e" />
+
+
+
+
 
 
 
