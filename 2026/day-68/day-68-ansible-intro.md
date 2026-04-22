@@ -24,3 +24,46 @@ Task 1: Understand Ansible
   - Playbooks -- YAML files that define what to do on which hosts.
  
 
+Task 2: Set Up Your Lab Environment
+- Use Terraform (recommended -- you just learned this) Use your TerraWeek skills to provision 3 EC2 instances.
+- Verify you can SSH into each one from your control node:
+  - ssh -i ~/your-key.pem ec2-user@<public-ip-1>
+  - ssh -i ~/your-key.pem ec2-user@<public-ip-2>
+  - ssh -i ~/your-key.pem ec2-user@<public-ip-3>
+  <img width="901" height="362" alt="image" src="https://github.com/user-attachments/assets/aaaccb4b-6c7e-4caa-8c9b-393ecd863f9b" />
+  <img width="1125" height="530" alt="image" src="https://github.com/user-attachments/assets/7ba8a284-4d7a-4e60-9fd7-90b619407fbc" />
+
+
+Task 3: Install Ansible
+- Install Ansible on your control node (your laptop or one dedicated EC2 instance)
+- Confirm the output shows the Ansible version, config file path, and Python version.
+- Document: On which machine did you install Ansible? Why is it only needed on the control node?
+  I installed Ansible on my control node, which is a dedicated Ubuntu EC2 instance (ansible-server). Ansible is only required on the control node because it         operates in an agentless manner. It connects to managed nodes over SSH and executes tasks remotely without requiring any software installation on those nodes.     This simplifies setup and reduces overhead compared to other configuration management tools.
+  <img width="1387" height="265" alt="image" src="https://github.com/user-attachments/assets/741e51d5-ade2-4695-9cf2-0c252ced1514" />
+
+Task 4: Create Your Inventory File
+- The inventory tells Ansible which servers to manage. Create a project directory and your first inventory:
+- mkdir ansible-practice && cd ansible-practice
+- Create a file called inventory.ini:
+- Verify Ansible can reach all hosts:
+  <img width="1850" height="577" alt="image" src="https://github.com/user-attachments/assets/442c721e-b55b-49df-9d58-27f54a67efdc" />
+
+
+Task 5: Run Ad-Hoc Commands
+<img width="1845" height="686" alt="image" src="https://github.com/user-attachments/assets/3981449b-792b-49b1-9494-adfba493dfe6" />
+
+Task 6: Explore Inventory Groups and Patterns
+- Create a group of groups -- add this to your inventory.ini:
+- Run commands against different groups
+- Create an ansible.cfg to avoid typing -i inventory.ini every time:
+  <img width="1833" height="767" alt="image" src="https://github.com/user-attachments/assets/2420d7f6-37db-43c9-a63a-9f2752f1ef0c" />
+
+  <img width="1846" height="610" alt="image" src="https://github.com/user-attachments/assets/fe3618a3-11ed-4eff-a1a2-a371aeeda21d" />
+
+
+
+
+
+
+
+
